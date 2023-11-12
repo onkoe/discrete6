@@ -2,9 +2,10 @@ alias r := run
 alias rd := run-debug
 
 filename := "input-1.csv"
+output-file := "test0_output.csv"
 
 run:
-    python3.11 permutation.py {{filename}}
+    python3.11 permutation.py {{filename}} {{output-file}}
 
 run-debug:
-    python3.11 permutation.py {{filename}} --debug
+    python3.11 permutation.py {{filename}} {{output-file}} --debug
