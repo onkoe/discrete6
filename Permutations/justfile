@@ -1,0 +1,10 @@
+alias r := run
+alias rd := run-debug
+
+filename := "input-1.csv"
+
+run:
+    python3.11 permutation.py {{filename}}
+
+run-debug:
+    python3.11 permutation.py {{filename}} --debug
